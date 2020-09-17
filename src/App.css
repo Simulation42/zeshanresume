@@ -1,38 +1,405 @@
-.App {
-  text-align: center;
+.header {
+  position: fixed;
+  text-align: right;
+  padding: 5px 20px;
+  border: 1px solid white;
+  right: 0%;
+  margin: 2% 5%;
+  color: white;
+  z-index: 1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bg1 {
+  height: 1298px;
+  background-image: url(./components/home/bg1.jpg);
+  min-height: 649px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column; 
+  position: relative;
+}
+
+.name {
+  font-family: arial;
+  font-size: 70px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  letter-spacing: 5px;
+  margin-top: 300px;
+  font-weight: 700;
+}
+
+.position {
+  margin-top: 14px;
+  font-family: arial;
+  font-size: 22px;
+  color: rgb(255, 221, 221);
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.profile {
+  background-image: url(./components/home/zeshan.jpg);
+  background-size: 100% 100%;
+  width: 220px;
+  height: 220px;
+  border-radius: 100%;
+  border: 14px solid rgba(255, 255, 255, 1);
+  bottom: 480px;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.introCon {
+  height: 600px;
+  background-color: rgba(255, 255, 255, 1);
+  bottom: 0px;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.about {
+  top: 180px;
+  font: arial;
+  font-size: 35px;
+  font-weight: 600;
+  position: relative;
+  display: block;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-left: 25%;
+  width: 20%;
+}
+
+.about::first-letter {
+  text-decoration: underline;
+  color: rgb(150, 0, 0);
+  text-decoration-color: black;
+  font-size: 50px;
+}
+
+.edu::first-letter {
+  text-decoration: underline;
+  color: black;
+  text-decoration-color: rgb(150, 0, 0);
+  font-size: 50px;
+}
+
+.edu {
+  margin-left: 10%;
+  width: 20%;
+  top: 180px;
+  font: arial;
+  color: rgb(151, 0, 0);
+  font-size: 35px;
+  font-weight: 600;
+  position: relative;
+  display: block;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-right: 25%;
+}
+
+.about2 {
+  margin-left: 25%;
+  font-size: 16px;
+  margin-top: 5%;
+  width: 20%;
+  font-family: arial;
+  text-align: center;
+  line-height: 25px;
+  position: relative;
+  display: block;
+}
+
+.edu2 {
+  margin-left: 10%;
+  margin-right: 25%;
+  font-size: 16px;
+  margin-top: 5%;
+  width: 20%;
+  font-family: arial;
+  text-align: center;
+  line-height: 25px;
+  position: relative;
+  display: block;
+}
+
+.edu2 h2 {
+  font-size: 22px;
+  font-family: arial;
+  margin: 0;
+  text-decoration: underline;
+  text-decoration-color: rgb(150, 0, 0);
+}
+
+.edu2 h3 {
+  font-size: 18px;
+  font-family: arial;
+  margin: 0;
+  text-decoration: underline;
+}
+
+.bg2 {
+  height: 1298px;
+  background-image: url(./components/home/bg2.jpg);
+  min-height: 649px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column; 
+  position: relative;
+}
+
+.workCon {
+  height: 600px;
+  bottom: 0px;
+  position: absolute;
+  display: relative;
+  background-color: white;
+  width: 100%;
+}
+
+.bg2 h2 {
+  font-family: arial;
+  font-size: 35px;
+  letter-spacing: 3px;
+  margin-left: 30%;
+  font-weight: 500;
+  margin-top: 3%;
+  position: relative;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.bg2 h2::first-letter {
+  font-size: 45px;
+  color: rgb(150, 0, 0);
+  text-decoration: underline;
+  text-decoration-color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.skill {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  margin-left: 30%;
+  margin-right: 30%;
+  height: 35%;
+  text-align: center;
+  font-family: arial;
+  font-weight: 700;
 }
+
+.skill h1 {
+  color: rgb(150, 0, 0);
+  margin: 0;
+  font-weight: 600;
+  font-size: 160%;
+}
+
+.skill p {
+  margin: 0;
+}
+
+.skill2 {
+  width: 50%;
+  height: 30%;
+  background-color: white;
+  font-size: 60%;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.skill3 {
+  width: 50%;
+  height: 30%;
+  background-color: rgb(255, 195, 195);
+  font-size: 60%;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.skill4 {
+  width: 100%;
+  height: 50%;
+  background-color: rgb(255, 195, 195);
+  font-size: 80%;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.skill5 {
+  width: 40%;
+  height: 100%;
+  background-color: #ffc3c3;
+  font-size: 100%;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.skill6 {
+  width: 100%;
+  height: 70%;
+  background-color: #ffffff;
+  font-size: 90%;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.skill7 {
+  width: 100%;
+  height: 50%;
+  background-color: #ffffff;
+  font-size: 80%;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.skillbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 35%;
+  height: 100%;
+}
+
+.skillbox2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 25%;
+  height: 100%;
+}
+
+.workCon h2 {
+  color: black;
+}
+
+.workCon h2::first-letter {
+  text-decoration-color: black;
+}
+
+.expCon {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.exp {
+  font: arial;
+  position: relative;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-left: 25%;
+  width: 20%;
+}
+
+.exp2 {
+  font: arial;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-right: 25%;
+  margin-left: 10%;
+  width: 20%;
+}
+
+.expCon h1 {
+  font: arial;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.infoCon {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.contact {
+  width: 50%;
+  height: 500px;
+  background-color: rgb(82, 0, 0);
+}
+
+.mail {
+  width: 50%;
+  height: 500px;
+  background-color: rgb(255, 180, 180);
+}
+
+.footer {
+  background-color: rgb(248, 248, 248);
+  padding: 5px;
+  margin: 0 30%;
+  font-family: arial;
+  font-size: 12px;
+}
+
+.workCon h2 {
+  color: black;
+}
+
+.contactCon {
+  margin-left: 70%;
+}
+
+.contactCon h2 {
+  color: white;
+  font-family: arial;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  margin-top: 15%;
+}
+
+.contactCon p {
+  color: white;
+  font-family: arial;
+  padding-top: 5%;
+}
+
+.mailCon {
+  margin-right: 70%;
+  padding-left: 5%;
+}
+
+.mailCon h2 {
+  color: black;
+  font-family: arial;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  margin-top: 15%;
+}
+
